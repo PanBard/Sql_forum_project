@@ -1,0 +1,54 @@
+version: "1.1"
+
+services:
+
+  api_forum:
+    container_name: api_forum
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    networks:
+      - backend
+    ports:
+      - 4111:4001
+    restart: on-failure
+    volumes:
+      - ./backend/index.js:/usr/src/app/index.js
+
+  frontend_forum:
+    container_name: frontend_forum
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    networks:
+      - backend
+    ports:
+      - 4117:5173
+
+  mysql:
+    image: mysql:8.3.0
+    container_name: mysql_database_forum
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: api_user
+      MYSQL_PASSWORD: password
+    command: --default-authentication-plugin=mysql_native_password
+    restart: on-failure
+    volumes:
+      - ./mysql_init/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - 3306:3306
+    networks:
+      - backend
+  adminer_forum:
+    image: adminer
+    container_name: adminer_forum
+    restart: always
+    ports:
+      - 8087:8080
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge

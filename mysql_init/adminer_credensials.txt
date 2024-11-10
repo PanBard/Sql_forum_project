@@ -1,0 +1,10 @@
+SERVER = mysql_database_forum
+USER = api_user
+PASSWORD = password
+DATABASE = analysisai_db
+
+lub
+
+SERVER = mysql_database_forum
+USER = root
+PASSWORD = root
