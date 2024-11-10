@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+}
+
+
+
+/* ######################### Dropdown menu */
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .dropdown .dropbtn {
+    /* font-size: 16px;   */
+    /* border: none; */
+    /* outline: none; */
+    /* color: white; */
+    /* padding: 14px 16px; */
+    /* background-color: inherit; */
+    /* font-family: inherit; */
+    margin: 0;
+    font-weight:600;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    /* background-color: #3b3a3b; */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    /* right: 10px; */
+    /* background-color: #484748; */
+    /* background-color: gray; */
+    min-width: 50px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 100;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: rgba(255,255,255,.15);
+    overflow: hidden;
+  }
+
+  .dropdown-content-user {
+    display: none;
+    position: absolute;
+    right: 10px;
+    /* background-color: #484748; */
+    /* background-color: gray; */
+    min-width: 50px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 100;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: rgba(255,255,255,.15);
+    overflow: hidden;
+  }
+
+  .dropdown-content-user a {
+    background-color: #30363d;
+    border: 1px solid gray;
+    float: none;
+    color: #c8d6e5;
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 2px;
+  }
+  
+  .dropdown-content a {
+    background-color: #30363d;
+    border: 1px solid gray;
+    float: none;
+    color: #c8d6e5;
+    padding: 10px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 2px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #3b3a3b;
+  }
+  
+  .dropdown-content-user a:hover {
+    background-color: #3b3a3b;
+  }
+
+  .dropdown:hover .dropdown-content-user {
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* ######################### Dropdown menu */
+
+
+#morek{
+  font-family: 'Exo', sans-serif;
+  overflow-x: hidden;
+}
+
+
+.context {
+  width: 100%;
+  position: absolute;
+  top:50vh;
+  
+}
+
+.context h1{
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+}
+
+
+.circles{
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.circles div{
+  position: absolute;
+  display: block;
+  list-style: none;
+  border: 1px solid;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+
+  overflow: hidden;
+  
+}
+
+
+.circles div:nth-child(1){
+  border: 1px solid;
+  left: 25%;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  animation-delay: 0s;
+  overflow: hidden;
+  animation: animate2 30s linear infinite;
+}
+
+
+.circles div:nth-child(2){
+  border: 1px solid;
+  left: 10%;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles div:nth-child(3){
+  left: 70%;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  animation-delay: 4s;
+  animation: animate2 15s linear infinite;
+}
+
+.circles div:nth-child(4){
+  left: 40%;
+  width: 1px;
+  height: 1px;
+  border-radius: 80%;
+  animation-delay: 0s;
+  animation-duration: 18s;
+
+}
+
+.circles div:nth-child(5){
+  border: 1px solid;
+  left: 65%;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  animation-delay: 0s;
+}
+
+.circles div:nth-child(6){
+  left: 75%;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  animation-delay: 3s;
+}
+
+.circles div:nth-child(7){
+  border: 1px solid;
+  left: 35%;
+  width: 1px;
+  height: 1px;
+  border-radius: 80%;
+  animation-delay: 7s;
+
+}
+
+.circles div:nth-child(8){
+  border: 1px solid;
+  left: 50%;
+  width: 1px;
+  height: 1px;
+  border-radius: 80%;
+  animation-delay: 15s;
+  animation-duration: 45s;
+  animation: animate2 35s linear infinite;
+}
+
+.circles div:nth-child(9){
+  border: 1px solid;
+  left: 20%;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  animation-delay: 2s;
+  animation-duration: 35s;
+
+}
+
+.circles div:nth-child(10){
+  border: 1px solid;
+  left: 85%;
+  width: 1px;
+  height: 1px;
+  border-radius: 80%;
+  animation-delay: 0s;
+  animation-duration: 11s;
+  animation: animate2 15s linear infinite;
+}
+
+
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(-100px)  ;
+      opacity: 0;
+      /* border-radius: 0; */
+      /* box-shadow: 0 0 2vw 0.4vw white */
+      box-shadow: 0 0  0vw 0vw white, 0 0  2vw 0.4vw #9f45b0 ,  0 0  0vw 0vw #e54ed0;
+      /* filter: drop-shadow(); */
+  }
+
+  50%{
+    
+      opacity: 1;
+      /* border-radius: 0; */
+      box-shadow: 0 0 3vw 1vw white , 0 100px  2vw 0.4vw #9f45b0;
+  }
+
+  100%{
+      transform: translateY(-800px) translateX(800px) ;
+      opacity: 0;
+      box-shadow: -100px 100px 0vw 0vw white, 0 0  3vw 1vw #9f45b0 , 0 0  3vw 1vw #e54ed0;
+      /* border-radius: 50%; */
+  }
+
+}
+
+@keyframes animate2 {
+
+  0%{
+      transform: translateY(-800px)  ;
+      opacity: 0;
+      /* border-radius: 0; */
+      /* box-shadow: 0 0 2vw 0.4vw white */
+      box-shadow: 0 0  0vw 0vw white, 50px 0  2vw 0.4vw #9f45b0 ,  50px 0  0vw 0vw #e54ed0;
+      /* filter: drop-shadow(); */
+  }
+
+  50%{
+    
+      opacity: 1;
+      /* border-radius: 0; */
+      box-shadow: 0 0 3vw 1vw white , 0 -100px  2vw 0.4vw #9f45b0;
+  }
+
+  100%{
+      transform: translateY(-100px) translateX(-800px) ;
+      opacity: 0;
+      box-shadow: 100px -100px 0vw 0vw white, 0 0  3vw 1vw #9f45b0 , 0 0  3vw 1vw #e54ed0;
+      /* border-radius: 50%; */
+  }
+
+}
+/* 4444444444444444444444444444444444 */
